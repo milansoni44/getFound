@@ -4,7 +4,7 @@
     
     const CLIENT_ID = 'YOUR CLIENT ID';
     const SERVICE_ACCOUNT_NAME = 'YOUR SERVICE ACCOUNT NAME';
-    $keyfile = dirname(__FILE__)."/getanalyticsdata/My Project-94098b0725d1.p12";
+    $keyfile = dirname(__FILE__)."/getanalyticsdata/YOUR P12 CERTIFICATE FILE";
     function generateRandomString() {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $charactersLength = strlen($characters);
