@@ -1,7 +1,7 @@
 <?php
 
 /*** mysql database ***/
-$database = 'getfound';
+$database = 'YOUR DATABSE NAME';
 
 /*** mysql hostname ***/
 $hostname = 'localhost';
