@@ -88,7 +88,7 @@
     }
     //updating deal in pipedrive
     function updatePipeDriveDeal($deal_id){
-        $api_token = 'YOUR API TOKEN';
+        $api_token = 'YOUR PIPE DRIVE API TOKEN';
         $url = "https://api.pipedrive.com/v1/deals/".$deal_id."?api_token=". $api_token;
         // $data = array('title' => 'test1 deals dhaval','stage_id'=>'5');
         $data = array('stage_id'=>'10');
