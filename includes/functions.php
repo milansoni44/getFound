@@ -2,8 +2,8 @@
     require_once dirname(__FILE__) . '/getanalyticsdata/Google/Client.php';
     require_once dirname(__FILE__) . '/getanalyticsdata/Google/Service/Analytics.php';
     
-    const CLIENT_ID = '609857927111-sdda40p9oofrm9aktcci2duo2rg0i3a3.apps.googleusercontent.com';
-    const SERVICE_ACCOUNT_NAME = '609857927111-sdda40p9oofrm9aktcci2duo2rg0i3a3@developer.gserviceaccount.com';
+    const CLIENT_ID = 'YOUR CLIENT ID';
+    const SERVICE_ACCOUNT_NAME = 'YOUR SERVICE ACCOUNT NAME';
     $keyfile = dirname(__FILE__)."/getanalyticsdata/My Project-94098b0725d1.p12";
     function generateRandomString() {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -54,8 +54,7 @@
        
 
 
-        // $keyfile = $_SERVER['DOCUMENT_ROOT']."/My Project-94098b0725d1.p12";
-        $keyfile = dirname(__FILE__)."/My Project-94098b0725d1.p12";
+        $keyfile = dirname(__FILE__)."/YOUR P12 CERTIFICATE FILE";
 
         $client = new Google_Client();
         $client->setAccessType('offline');
@@ -89,7 +88,7 @@
     }
     //updating deal in pipedrive
     function updatePipeDriveDeal($deal_id){
-        $api_token = '9cbfec0e554152d0ba6e17cc4bdbc9f1dc0d98df';
+        $api_token = 'YOUR API TOKEN';
         $url = "https://api.pipedrive.com/v1/deals/".$deal_id."?api_token=". $api_token;
         // $data = array('title' => 'test1 deals dhaval','stage_id'=>'5');
         $data = array('stage_id'=>'10');
